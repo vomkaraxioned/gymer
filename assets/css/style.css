@@ -112,6 +112,7 @@ li {
 a {text-decoration: none;}
 
 .title {
+  width: 60%;
   color: #41be85;
   font-size: 32px;
   font-weight: 600;
@@ -124,6 +125,7 @@ a {text-decoration: none;}
   color: #47463d;
   font-size: 12px;
   font-weight: 400;
+  text-align: justify;
   line-height: 1.5;
 }
 /*=================================
@@ -151,7 +153,6 @@ nav {
 
 .nav-item {
   margin-right: 4%;
-  color: #fff;
   font-size: 12px;
   font-weight: 400;
   text-transform: capitalize;
@@ -160,11 +161,13 @@ nav {
 .contact-btn {
   padding: 5px 1.3%;
   border: 1px solid #75a38e;
-  color: #75a38e;
+  color: #41be85;
   font-size: 12px;
 }
 
 .active {border-bottom: 1px solid #fff;}
+
+.nav-item a {color: #fff;}
 
 .nav-item a:hover {font-size: 16px;}
 
@@ -267,9 +270,12 @@ nav {
   padding: 15px 5%;
   background-color: #41be85;
   color: #000;
-  font-size: 12px;
+  font-size: 10px;
   font-weight: 400;
+  text-transform: capitalize;
 }
+
+.info-btn:hover {background-color: #fff;}
 
 .info-img {
   width: 49%;
@@ -356,7 +362,7 @@ nav {
 .batch {
   width:31%;
   display: inline-block;
-  background-color: #75a38e;
+  text-transform: lowercase;
 }
 
 .trainers {
@@ -368,6 +374,7 @@ nav {
   width: 17%;
   display: inline-block;
   text-align: center;
+  text-transform: lowercase;
 }
 
 .joining a {color: #41be85;}
@@ -385,25 +392,114 @@ nav {
 
 /* trainer profile starts here */
 
-.profile {
-  width: 30%;
+.trainer-profiles{padding:10px 0 145px 0;}
+
+.profile {width: 29.5%;}
+
+.profile:nth-child(even) {
+  padding: 0 5%;
+  position: relative;
+  top: 35px;
 }
 
 .profile figure {
   width: 97%;
-  box-shadow: 4px 4px #41be85;
+  box-shadow: 8px 8px #41be85;
 }
 
+.trainer-name {
+  padding:30px 0 10px 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.expertise {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
 
 /*trainer profile ends here */
 
+/*featured services start here*/
 
+.featured-services {width: 47%;}
 
+.service {
+  width: 23%;
+  padding: 50px 4%;
+  background-color: #41be85;
+}
 
+.service:nth-child(even){margin:0 2%;}
 
+.service-name {
+  padding: 25px 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
 
+.service .info {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  text-align: justify;
+}
+/*featured services end here*/
 
+/*contact us start here */
+.contact {
+  margin-top: 65px;
+  background-color: #101010;
+}
 
+.contact-form {
+  width: 57%;
+  padding: 71px 20%;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 8px 0;
+  border: 1px solid #fff;
+  background-color: #101010;
+}
+
+input::placeholder {font-size: 12px;}
+
+.name {
+  width: 47%;
+  margin-bottom: 12px;
+  display: inline-block;
+}
+
+.name:nth-child(1){padding-right: 5%;}
+
+.error {display: none;}
+
+.subject,.email,.txt-area { margin-bottom: 12px;}
+
+textarea {
+  width: 100%;
+  border: 1px solid #fff;
+  background-color: #101010;
+}
+
+input[type=submit] {
+  width: 47.5%;
+  padding: 10px 0;
+  background-color: #41be85;
+  font-size: 10px ;
+  font-weight: 400;
+  text-transform: capitalize;
+
+}
 /*=================================
   main styling ends here
 =================================*/
@@ -411,12 +507,43 @@ nav {
 /*=================================
   footer styling starts here
 =================================*/ 
+footer { 
+  padding: 85px 0;
+  text-align: center;
+}
 
+.get-in {
+  width: 23%;
+  display: inline-block;
+}
 
+.get-in-title {
+  padding-bottom:20px ;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: justify;
+}
 
+.gymer-info {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
 
+}
 
+.link {display: block;}
 
+.copyright {
+  color: #fff;
+  padding-top: 135px;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.copyright span {color: #41be85;}
 
  /*=================================
   footer styling ends here
