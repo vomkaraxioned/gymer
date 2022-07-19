@@ -104,13 +104,39 @@ li {
   margin: 0 auto;
 }
 /*common styling*/
+.container {
+  position: relative;
+  background-color: #000;
+}
 
+a {text-decoration: none;}
+
+.title {
+  color: #41be85;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.btn { border-radius: 5px;}
+.description {
+  padding: 30px 0;
+  color: #47463d;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
 /*=================================
   Header styling starts here
 =================================*/
 /*header styling */
 header {
   padding:20px 7% 0 7%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: transparent;
 }
 
 .logo {
@@ -134,20 +160,32 @@ nav {
 .contact-btn {
   padding: 5px 1.3%;
   border: 1px solid #75a38e;
-  border-radius: 5px;
   color: #75a38e;
   font-size: 12px;
 }
+
+.active {border-bottom: 1px solid #fff;}
+
+.nav-item a:hover {font-size: 16px;}
+
 /*header styling ends here */
+/*=================================
+  Header styling ends here
+=================================*/  
+
+/*=================================
+  main styling starts here
+=================================*/
 
 /*banner styling start here */
+
 .banner {
   background-image: url('https://via.placeholder.com/1366x680/34a1eb/808080?text=%7C%7C');
 }
 
 .banner-title {
   width: 60%;
-  padding: 216px 0 247px 0;
+  padding: 261px 0 247px 0;
   margin: 0 20%;
   color: #fff;
   font-size: 60px;
@@ -157,15 +195,207 @@ nav {
 }
 /*banner styling ends here */
 
+/*visitor start here */
+
+.visitor-item {
+  width:20%;
+  padding:58px 4.5% 80px 0 ;
+  position: relative;
+  text-align: center;
+}
 
 
-/*=================================
-  Header styling ends here
-=================================*/  
+.visitor-icon {
+  width: 30%;
+  display: inline-block;
+  position: absolute;
+  top:50%;
+  left: 0;
+  
+}
 
-/*=================================
-  main styling starts here
-=================================*/
+.visitor-info {
+  width: 70%;
+  display: inline-block;
+  text-align: right;
+}
+
+.data {
+  padding-bottom: 5px;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.key {
+  color: #fff;
+  font-size: 12px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.gym-icon {
+  font-size: 0;
+  font-family: 'FontAwesome';
+}
+
+.gym-icon::before {
+  color: #fff;
+  position: relative;
+  bottom: 30px;
+  font-size: 24px;
+  font-weight: 900;
+  content: '\f21e';
+}
+
+/*visitor end here*/
+
+/*section info start here */
+.gym-information {
+  display: flex;
+  padding-bottom: 125px;
+}
+
+.information{
+  width: 51%;
+  padding: 32px 10% 0 0;
+  display: inline-block;
+}
+
+.info-btn {
+  padding: 15px 5%;
+  background-color: #41be85;
+  color: #000;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.info-img {
+  width: 49%;
+  display: inline-block;
+  box-shadow: 8px 8px #41be85;
+}
+
+.info-img img {width: 100%;}
+
+/*section info ends here*/
+
+/*classes start here */
+
+.classes {width: 47%;}
+/*classes end here*/
+
+/*gallery start here */
+
+.gallery-item {width: 24.6%;}
+
+/*gallery ends here*/
+/* carousel control*/
+.carousel-control {
+  padding-top:30px ;
+  text-align: center;
+}
+
+.control {
+  padding: 4px;
+  border: none;
+  border-radius: 100%;
+  font-size: 0;
+}
+
+.control:active,.control:hover {background-color: #41be85;}
+
+/* schedule start here */
+
+.schedule {
+  width: 47%;
+  padding-top:135px;
+}
+
+/*schedule ends here */
+
+/*time table start here */
+.days {
+  padding: 18px 0 30px 0;
+  text-align: center;
+}
+
+.day {margin-left:2% ;}
+
+.day a{
+  padding: 12px 5%;
+  color: #41be85;
+  font-size: 12px;
+  text-transform: capitalize;
+}
+
+.day a:hover { 
+  background-color: #41be85;
+  color: #fff;
+}
+
+.time-table {
+  padding-bottom:143px ;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.time-table li {
+  padding: 20px 5%;
+  border: 1px solid #fff;
+  display: block;
+  font-size: 12px;
+}
+
+.exercises {
+  width: 24%;
+  display: inline-block;
+}
+
+.batch {
+  width:31%;
+  display: inline-block;
+  background-color: #75a38e;
+}
+
+.trainers {
+  width: 24%;
+  display: inline-block;
+}
+
+.joining {
+  width: 17%;
+  display: inline-block;
+  text-align: center;
+}
+
+.joining a {color: #41be85;}
+
+.joining a:hover {color: #fff;}
+
+
+/* time table ends here */
+
+/* trainers info start here */
+
+.trainer-info {width: 47%;}
+
+/* trainers info ends here */
+
+/* trainer profile starts here */
+
+.profile {
+  width: 30%;
+}
+
+.profile figure {
+  width: 97%;
+  box-shadow: 4px 4px #41be85;
+}
+
+
+/*trainer profile ends here */
 
 
 
