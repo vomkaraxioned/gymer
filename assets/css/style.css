@@ -110,9 +110,7 @@ li {
 =================================*/
 /*header styling */
 header {
-  padding:15px 7% 0 7%;
-  position: relative;
-  top: 0;
+  padding:20px 7% 0 7%;
 }
 
 .logo {
@@ -143,9 +141,20 @@ nav {
 /*header styling ends here */
 
 /*banner styling start here */
-.banner {background-image: url('https://via.placeholder.com/1366x680/34a1eb/808080?text=%7C%7C');}
+.banner {
+  background-image: url('https://via.placeholder.com/1366x680/34a1eb/808080?text=%7C%7C');
+}
 
-.banner-title 
+.banner-title {
+  width: 60%;
+  padding: 216px 0 247px 0;
+  margin: 0 20%;
+  color: #fff;
+  font-size: 60px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: capitalize;
+}
 /*banner styling ends here */
 
 
