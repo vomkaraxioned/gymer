@@ -432,7 +432,7 @@ nav {
 .featured-services {width: 47%;}
 
 .service {
-  width: 23%;
+  width: 23.5%;
   padding: 50px 4%;
   background-color: #41be85;
 }
@@ -516,9 +516,13 @@ footer {
 }
 
 .get-in {
-  width: 23%;
+  width: 27%;
   display: inline-block;
+  background-color: aqua;
+  text-align: left;
 }
+
+.get-in:nth-child(2) {margin:0 8%;}
 
 .get-in-title {
   padding-bottom:20px ;
@@ -539,6 +543,13 @@ footer {
 
 .link {display: block;}
 
+.subscribe {
+  width: 60%;
+  display: inline-block;
+}
+.subs-btn {
+  display: inline-block;
+}
 .copyright {
   color: #fff;
   padding-top: 135px;
