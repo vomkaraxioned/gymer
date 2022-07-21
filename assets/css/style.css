@@ -120,10 +120,11 @@ a {text-decoration: none;}
 }
 
 .btn { border-radius: 5px;}
+
 .description {
   padding: 30px 0;
   color: #47463d;
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 400;
   text-align: justify;
   line-height: 1.5;
@@ -165,11 +166,13 @@ nav {
   font-size: 12px;
 }
 
+.contact-btn:hover {background-color: #fff;}
+
 .active {border-bottom: 1px solid #fff;}
 
 .nav-item a {color: #fff;}
 
-.nav-item a:hover {font-size: 16px;}
+.nav-item a:hover {border-bottom: 1px solid #fff;}
 
 /*header styling ends here */
 /*=================================
@@ -182,9 +185,7 @@ nav {
 
 /*banner styling start here */
 
-.banner {
-  background-image: url('https://via.placeholder.com/1366x680/34a1eb/808080?text=%7C%7C');
-}
+.banner { background-image: url('https://via.placeholder.com/1366x680/000000/808080?text=%7C%7C');}
 
 .banner-title {
   width: 60%;
@@ -346,11 +347,14 @@ nav {
 
 .time-table {
   padding-bottom:143px ;
+  display: flex;
   color: #fff;
+  text-align: center;
   text-transform: capitalize;
 }
+.time-table li {border-collapse: collapse;}
 
-.time-table li {
+.column li {
   padding: 20px 5%;
   border: 1px solid #fff;
   display: block;
@@ -360,6 +364,7 @@ nav {
 .exercises {
   width: 24%;
   display: inline-block;
+  border-collapse: collapse;
 }
 
 .batch {
@@ -383,7 +388,6 @@ nav {
 .joining a {color: #41be85;}
 
 .joining a:hover {color: #fff;}
-
 
 /* time table ends here */
 
@@ -434,7 +438,20 @@ nav {
 .service {
   width: 23.5%;
   padding: 50px 4%;
+  position: relative;
   background-color: #41be85;
+}
+
+.service-icon {font-size: 0;}
+
+.service-icon::before {
+  position: absolute;
+  left: 15%;
+  color: #fff;
+  font-family: 'FontAwesome';
+  font-size: 30px;
+  font-weight: 900;
+  content: '\f21e';
 }
 
 .service:nth-child(even){margin:0 2%;}
@@ -477,7 +494,7 @@ input {
 input::placeholder {font-size: 12px;}
 
 .name {
-  width: 46.5%;
+  width: 46.8%;
   margin-bottom: 12px;
   display: inline-block;
 }
@@ -489,20 +506,26 @@ input::placeholder {font-size: 12px;}
 .subject,.email,.txt-area { margin-bottom: 12px;}
 
 textarea {
-  width: 100%;
+  width: 99%;
   border: 1px solid #fff;
   background-color: #101010;
 }
 
-input[type=submit] {
+input::placeholder {
+  padding-left: 5px;
+  font-size: 11px;
+}
+.form-btn {
   width: 47.5%;
   padding: 10px 0;
   background-color: #41be85;
   font-size: 10px ;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: capitalize;
 
 }
+
+.form-btn:hover {background-color: #656565;}
 /*=================================
   main styling ends here
 =================================*/
@@ -510,19 +533,24 @@ input[type=submit] {
 /*=================================
   footer styling starts here
 =================================*/ 
-footer { 
-  padding: 85px 0;
-  text-align: center;
-}
+footer { padding: 85px 0;}
 
 .get-in {
+<<<<<<< HEAD
   width: 27%;
+=======
+  width: 32.9%;
+>>>>>>> ab036e20628f7a283b98563ec139b6f494367e4b
   display: inline-block;
   background-color: aqua;
   text-align: left;
 }
 
+<<<<<<< HEAD
 .get-in:nth-child(2) {margin:0 8%;}
+=======
+.subscribe-letter {display: flex;}
+>>>>>>> ab036e20628f7a283b98563ec139b6f494367e4b
 
 .get-in-title {
   padding-bottom:20px ;
@@ -530,16 +558,63 @@ footer {
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: justify;
+  text-align: left;
 }
+
+.pages{text-align: center;}
 
 .gymer-info {
-  color: #fff;
-  font-size: 12px;
+  margin-bottom: 15px;
+  color: #545454;
+  font-size: 11px;
   font-weight: 400;
-  line-height: 1.5;
-
+  text-align: left;
+  line-height: 1.6;
 }
+
+.get-in:nth-child(2) {text-align: center;}
+
+.link {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.link a {color: #41be85;}
+
+.link a:hover {color: #fff;}
+
+.gymer-info::first-letter {text-transform: capitalize;}
+
+.footer-form {display: flex;}
+
+.subscribe {
+  width: 70%;
+  display: inline-block;
+}
+
+.subscribe input[type=email] { border: 1px solid #fff;}
+
+.subs-btn {
+  width: 36%;
+  display: inline-block;
+}
+
+.subs-email {
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  background-color: #41be85;
+}
+
+.subs-email[value] {
+  font-size: 8px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.subs-email:hover {background-color: #656565;}
 
 .link {display: block;}
 
@@ -551,10 +626,11 @@ footer {
   display: inline-block;
 }
 .copyright {
-  color: #fff;
+  color: #545454;
   padding-top: 135px;
   font-size: 12px;
   font-weight: 400;
+  text-align: center;
 }
 
 .copyright span {color: #41be85;}
@@ -567,6 +643,8 @@ footer {
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
+/*header styling start here*/
 
+.logo {padding-right: 20%;}
 
 }  
