@@ -100,7 +100,7 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 58%; 
+  width: 65%; 
   margin: 0 auto;
 }
 /*common styling*/
@@ -536,21 +536,12 @@ input::placeholder {
 footer { padding: 85px 0;}
 
 .get-in {
-<<<<<<< HEAD
-  width: 27%;
-=======
-  width: 32.9%;
->>>>>>> ab036e20628f7a283b98563ec139b6f494367e4b
+  width: 31%;
   display: inline-block;
-  background-color: aqua;
   text-align: left;
 }
 
-<<<<<<< HEAD
-.get-in:nth-child(2) {margin:0 8%;}
-=======
-.subscribe-letter {display: flex;}
->>>>>>> ab036e20628f7a283b98563ec139b6f494367e4b
+.get-in:nth-child(2) {margin:0 2%;}
 
 .get-in-title {
   padding-bottom:20px ;
