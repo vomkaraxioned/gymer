@@ -495,7 +495,7 @@ input {
 input::placeholder {font-size: 12px;}
 
 .name {
-  width: 46.9%;
+  width: 46.8%;
   margin-bottom: 12px;
   display: inline-block;
 }
@@ -625,6 +625,8 @@ footer { padding: 85px 0;}
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
+/*header styling start here*/
 
+.logo {padding-right: 20%;}
 
 }  
