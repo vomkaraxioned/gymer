@@ -347,6 +347,7 @@ nav {
 .time-table {
   padding-bottom:143px ;
   color: #fff;
+  text-align: center;
   text-transform: capitalize;
 }
 
@@ -360,6 +361,7 @@ nav {
 .exercises {
   width: 24%;
   display: inline-block;
+  /* border-collapse: collapse; */
 }
 
 .batch {
@@ -477,7 +479,7 @@ input {
 input::placeholder {font-size: 12px;}
 
 .name {
-  width: 46.5%;
+  width: 46.9%;
   margin-bottom: 12px;
   display: inline-block;
 }
@@ -489,12 +491,12 @@ input::placeholder {font-size: 12px;}
 .subject,.email,.txt-area { margin-bottom: 12px;}
 
 textarea {
-  width: 100%;
+  width: 99%;
   border: 1px solid #fff;
   background-color: #101010;
 }
 
-input[type=submit] {
+.form-btn {
   width: 47.5%;
   padding: 10px 0;
   background-color: #41be85;
@@ -510,15 +512,14 @@ input[type=submit] {
 /*=================================
   footer styling starts here
 =================================*/ 
-footer { 
-  padding: 85px 0;
-  text-align: center;
-}
+footer { padding: 85px 0;}
 
 .get-in {
-  width: 23%;
+  width: 32.9%;
   display: inline-block;
 }
+
+.subscribe-letter {display: flex;}
 
 .get-in-title {
   padding-bottom:20px ;
@@ -526,24 +527,61 @@ footer {
   font-size: 13px;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: justify;
+  text-align: left;
 }
 
 .gymer-info {
-  color: #fff;
-  font-size: 12px;
+  margin-bottom: 15px;
+  color: #545454;
+  font-size: 11px;
   font-weight: 400;
-  line-height: 1.5;
-
+  text-align: left;
+  line-height: 1.6;
 }
+
+.get-in:nth-child(2) {text-align: center;}
+
+.link {
+  margin-bottom: 12px;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.link a {color: #41be85;}
+
+.link a:hover {color: #fff;}
+
+.gymer-info::first-letter {text-transform: capitalize;}
+
+.footer-form {
+  border: 1px solid #fff;
+  display: flex;
+}
+
+.subscribe {
+  width: 70%;
+  display: inline-block;
+}
+
+.subs-btn {
+  width: 36%;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.subs-email {width: 100%;}
 
 .link {display: block;}
 
 .copyright {
-  color: #fff;
+  color: #545454;
   padding-top: 135px;
   font-size: 12px;
   font-weight: 400;
+  text-align: center;
 }
 
 .copyright span {color: #41be85;}
