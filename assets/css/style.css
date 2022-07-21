@@ -165,6 +165,8 @@ nav {
   font-size: 12px;
 }
 
+.contact-btn:hover {background-color: #656565;}
+
 .active {border-bottom: 1px solid #fff;}
 
 .nav-item a {color: #fff;}
@@ -183,7 +185,7 @@ nav {
 /*banner styling start here */
 
 .banner {
-  background-image: url('https://via.placeholder.com/1366x680/34a1eb/808080?text=%7C%7C');
+  background-image: url('https://via.placeholder.com/1366x680/000000/808080?text=%7C%7C');
 }
 
 .banner-title {
@@ -346,12 +348,14 @@ nav {
 
 .time-table {
   padding-bottom:143px ;
+  display: flex;
   color: #fff;
   text-align: center;
   text-transform: capitalize;
 }
+.time-table li {border-collapse: collapse;}
 
-.time-table li {
+.column li {
   padding: 20px 5%;
   border: 1px solid #fff;
   display: block;
@@ -361,7 +365,7 @@ nav {
 .exercises {
   width: 24%;
   display: inline-block;
-  /* border-collapse: collapse; */
+  border-collapse: collapse;
 }
 
 .batch {
@@ -386,7 +390,6 @@ nav {
 
 .joining a:hover {color: #fff;}
 
-.collapse {border-collapse: collapse;}
 /* time table ends here */
 
 /* trainers info start here */
@@ -435,9 +438,11 @@ nav {
 
 .service {
   width: 23%;
-  padding: 50px 4%;
+  padding: 18px 4%;
   background-color: #41be85;
 }
+
+.service figure {position: relative;}
 
 .service:nth-child(even){margin:0 2%;}
 
