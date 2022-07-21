@@ -438,11 +438,22 @@ nav {
 
 .service {
   width: 23%;
-  padding: 18px 4%;
+  padding: 50px 4%;
+  position: relative;
   background-color: #41be85;
 }
 
-.service figure {position: relative;}
+.service-icon {font-size: 0;}
+
+.service-icon::before {
+  position: absolute;
+  left: 15%;
+  color: #fff;
+  font-family: 'FontAwesome';
+  font-size: 30px;
+  font-weight: 900;
+  content: '\f21e';
+}
 
 .service:nth-child(even){margin:0 2%;}
 
