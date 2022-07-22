@@ -763,13 +763,13 @@ footer { padding: 85px 0;}
   
 .wrapper{ width: 90%;}
 
-.logo {
-  padding:10px 5%;
-}
+.logo { padding:10px 5%;}
 
 .nav-item {display: none;}
 
 .contact-btn {display: none;}
+
+.description {width: 100%;}
 
 .menu {
   width: 10%;
@@ -812,6 +812,7 @@ footer { padding: 85px 0;}
   margin-left:1.2% ;
 }
 
+.column li {font-size: 11px;}
 .day a { font-size: 11px;}
 
 .profile { width: 29.2%;}
