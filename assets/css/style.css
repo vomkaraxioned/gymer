@@ -215,7 +215,7 @@ nav {
 
 /*visitor start here */
 
-.visitor {display: flex;}
+.visitor { display: flex;}
 
 .visitor-item {
   width:20%;
@@ -287,8 +287,9 @@ nav {
 
 /*section info start here */
 .gym-information {
-  display: flex;
   padding-bottom: 125px;
+  display: flex;
+  flex-direction: row;
 }
 
 .information{
@@ -671,7 +672,10 @@ footer { padding: 85px 0;}
 
 .gymer-info::first-letter {text-transform: capitalize;}
 
-.footer-form {display: flex;}
+.footer-form {
+  display: flex;
+  flex-direction: row;
+}
 
 .subscribe {
   width: 70%;
@@ -856,7 +860,7 @@ footer { padding: 85px 0;}
   .visitor-item { padding: 15px 0;}
 
   .batch { width:40%;}
-  }  
+   
 
   .profile:nth-child(even){ 
     padding:20px 0;
@@ -878,8 +882,8 @@ footer { padding: 85px 0;}
   .name { width: 100%;}
 
   .subs-btn{ width: 60%;}
-
-  /*media query for 995px starts here*/
+}
+  /*media query for 425px starts here*/
 @media only screen and (max-width: 425px) {
 
   /*header styling start here*/
