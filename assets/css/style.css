@@ -825,6 +825,7 @@ footer { padding: 85px 0;}
 }
 
 .column li {font-size: 11px;}
+
 .day a { font-size: 11px;}
 
 .profile { width: 29.2%;}
@@ -917,6 +918,13 @@ footer { padding: 85px 0;}
   .get-in { 
     width: 100%;
     display: block;
+    text-align: center
+  }
+
+  .get-in:nth-child(2) { 
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    padding: 0 30%;
   }
 
   /* .subscribe { width: 95%;}
@@ -932,6 +940,11 @@ footer { padding: 85px 0;}
   /*header styling start here*/
   
   .logo {padding-right: 20%;}
+
+  .banner-title { 
+    padding: 100px 5%;
+    font-size: 40px;
+  }
 
  .batch { width: 70%;}
 
