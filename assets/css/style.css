@@ -888,7 +888,8 @@ footer { padding: 85px 0;}
 @media only screen and (max-width: 425px) {
 
   /*header styling start here*/
-  
+  .classes { width: 100%;}
+
   .description { font-size: 16px;}
 
   .gym-information { flex-direction: column;}
@@ -924,7 +925,7 @@ footer { padding: 85px 0;}
   .get-in:nth-child(2) { 
     border-top: 1px solid #fff;
     border-bottom: 1px solid #fff;
-    padding: 0 30%;
+    padding: 0 40%;
   }
 
   /* .subscribe { width: 95%;}
