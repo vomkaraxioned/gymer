@@ -914,7 +914,12 @@ footer { padding: 85px 0;}
 
   .form-btn { width: 100%;}
 
-  .footer-form { flex-direction: column;}
+  .get-in-title { padding-top: 10px;}
+  
+  .footer-form { 
+    flex-direction: column;
+    align-items: center;
+  }
 
   .get-in { 
     width: 100%;
