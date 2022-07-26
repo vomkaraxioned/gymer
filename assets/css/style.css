@@ -114,8 +114,8 @@ a {text-decoration: none;}
 .title {
   width: 60%;
   color: #41be85;
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 34px;
+  font-weight: 900;
   text-transform: capitalize;
 }
 
@@ -133,7 +133,7 @@ a {text-decoration: none;}
 =================================*/
 /*header styling */
 header {
-  padding:20px 7% 0 7%;
+  padding:10px 5% 0 5%;
   position: absolute;
   top: 0;
   left: 0;
@@ -141,22 +141,24 @@ header {
   background-color: transparent;
 }
 
-.logo { padding-top:10px ;}
+.logo { 
+  padding-top:10px ;
+  margin-right: 28%;
+}
 
 nav {
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: center;
 }
 
 .navigation { 
-  width: 80%;
+  width: 58%;
   padding-top: 10px;
-  text-align: center;
 }
 
 .nav-item {
+  padding: 5px 0;
   margin-right: 4%;
   font-size: 12px;
   font-weight: 400;
@@ -164,11 +166,13 @@ nav {
 }
 
 .contact-btn {
-  padding: 5px 1.3%;
+  padding: 7px .7%;
+  margin: 7px 0;
   border: 1px solid #75a38e;
   display: inline-block;
   color: #41be85;
-  font-size: 12px;
+  font-size: 10px;
+  text-transform: uppercase;
 }
 
 .contact-btn:hover {
@@ -206,7 +210,7 @@ nav {
   padding: 261px 0 247px 0;
   margin: 0 20%;
   color: #fff;
-  font-size: 60px;
+  font-size: 80px;
   font-weight: 900;
   text-align: center;
   text-transform: capitalize;
@@ -219,7 +223,7 @@ nav {
 
 .visitor-item {
   width:20%;
-  padding:58px 4.2% 80px 0 ;
+  padding:58px 5% 80px 0 ;
   display: flex;
   text-align: center;
 }
@@ -240,8 +244,8 @@ nav {
 .data {
   padding-bottom: 5px;
   color: #fff;
-  font-size: 24px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: 900;
   text-align: left;
 }
 
@@ -303,13 +307,13 @@ nav {
   background-color: #41be85;
   color: #000;
   font-size:8px;
-  font-weight: 700;
+  font-weight: 900;
   text-align: center;
   text-transform: uppercase;
 }
 
 .info-btn:hover {
-  border:1px solid #fff;
+  border:1px solid #41be85;
   background-color: #000;
   color: #41be85;
 }
@@ -335,6 +339,7 @@ nav {
 /*classes end here*/
 
 /*gallery start here */
+.gallery { display: flex;} 
 
 .gallery-item { width: 24.6%;}
 
@@ -408,7 +413,7 @@ nav {
   text-align: center;
   text-transform: capitalize;
 }
-.time-table li {border-collapse: collapse;}
+.time-table li { border-collapse: collapse;}
 
 .column li {
   padding: 20px 5%;
@@ -512,22 +517,22 @@ nav {
   font-weight: 900;
 }
 
-.service-icon .banana::before {
-  font-size: 30px;
+ .banana::before {
+  font-size: 34px;
   /* text-indent: 1px; */
   content: '\e2e5';
   /* float: right; */
 }
 
-.service-icon .pulse::before {
-  font-size: 30px;
+ .pulse::before {
+  font-size: 34px;
   /* text-indent: 1px; */
   content: '\f21e';
   /* float: right; */
 }
 
-.service-icon .weight::before {
-  font-size: 30px;
+ .weight::before {
+  font-size: 34px;
   /* text-indent: 1px; */
   content: '\f496';
   /* float: right; */
@@ -537,6 +542,7 @@ nav {
 
 .service-name {
   padding: 25px 0;
+  margin-top: 20px;
   color: #fff;
   font-size: 20px;
   font-weight: 400;
@@ -613,6 +619,7 @@ input::placeholder {
 }
 
 .form-btn:hover {
+  border: 1px solid #41be85;
   background-color: #000;
   color: #41be85;
 }
@@ -702,7 +709,10 @@ footer { padding: 85px 0;}
   text-transform: uppercase;
 }
 
-.subs-email:hover {background-color: #656565;}
+.subs-email:hover { 
+  border:1px solid #41be85;
+  background-color: #656565;
+}
 
 .link {display: block;}
 
@@ -721,9 +731,9 @@ footer { padding: 85px 0;}
   text-align: center;
 }
 
-.copyright span {color: #41be85;}
+.copyright span a{color: #41be85;}
 
-.copyright span:hover {color: #fff;}
+.copyright span a:hover {color: #fff;}
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -844,7 +854,11 @@ footer { padding: 85px 0;}
 @media only screen and (max-width: 540px) {
 
   /*header styling start here*/
-  
+  .banner-title { 
+    width: 30%;
+    font-size: 60px;
+  }
+
   .logo {padding-right: 0;}
 
   .visitor {
@@ -889,6 +903,11 @@ footer { padding: 85px 0;}
 
   /*header styling start here*/
   .classes { width: 100%;}
+
+  .banner-title {  
+    margin:0 25%;
+    text-align: center;
+  }
 
   .description { font-size: 16px;}
 
