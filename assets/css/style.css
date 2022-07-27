@@ -211,7 +211,7 @@ nav {
   margin: 0 20%;
   color: #fff;
   font-size: 80px;
-  font-weight: 900;
+  font-weight: 1000;
   text-align: center;
   text-transform: capitalize;
 }
@@ -820,6 +820,10 @@ footer { padding: 85px 0;}
 .visitor { text-align:center;}
 
 .visitor-item {width: 40%;}
+
+.visitor-icon { 
+  right: 10px;
+}
 
 .info-img  { 
   margin-top: 200px ;
