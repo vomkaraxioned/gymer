@@ -1,3 +1,5 @@
+
+
 @charset "utf-8";
 /* ==========================================================================
    1. CSS Reset Code
@@ -83,7 +85,8 @@ sub { bottom: -.25em; }
 
 /*for all*/
 body {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   font-family: sans-serif;
 }
 
@@ -148,8 +151,13 @@ header {
 
 nav {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .navigation { 
@@ -219,11 +227,13 @@ nav {
 
 /*visitor start here */
 
-.visitor { display: flex;}
+.visitor { display: -webkit-box; display: -ms-flexbox; display: flex;}
 
 .visitor-item {
   width:20%;
   padding:58px 5% 80px 0 ;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   text-align: center;
 }
@@ -292,8 +302,13 @@ nav {
 /*section info start here */
 .gym-information {
   padding-bottom: 125px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .information{
@@ -319,11 +334,13 @@ nav {
 }
 
 .info-img {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 49%;
-  max-height: 400;
+  max-height: 400px;
   display: inline-block;
-  box-shadow: 8px 8px #41be85;
+  -webkit-box-shadow: 8px 8px #41be85;
+          box-shadow: 8px 8px #41be85;
 }
 
 .info-img img {
@@ -339,7 +356,7 @@ nav {
 /*classes end here*/
 
 /*gallery start here */
-.gallery { display: flex;} 
+.gallery { display: -webkit-box; display: -ms-flexbox; display: flex;} 
 
 .gallery-item { width: 24.6%;}
 
@@ -408,6 +425,8 @@ nav {
 
 .time-table {
   padding-bottom:143px ;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   color: #fff;
   text-align: center;
@@ -475,7 +494,8 @@ nav {
 
 .profile figure {
   width: 97%;
-  box-shadow: 8px 8px #41be85;
+  -webkit-box-shadow: 8px 8px #41be85;
+          box-shadow: 8px 8px #41be85;
 }
 
 .trainer-name {
@@ -575,6 +595,14 @@ input {
   background-color: #101010;
 }
 
+input::-webkit-input-placeholder {font-size: 12px;}
+
+input::-moz-placeholder {font-size: 12px;}
+
+input:-ms-input-placeholder {font-size: 12px;}
+
+input::-ms-input-placeholder {font-size: 12px;}
+
 input::placeholder {font-size: 12px;}
 
 .name {
@@ -589,6 +617,14 @@ input::placeholder {font-size: 12px;}
 
 .subject,.email,.txt-area { margin-bottom: 12px;}
 
+.subscribe input[type=email]::-webkit-input-placeholder {font-size: 12px;}
+
+.subscribe input[type=email]::-moz-placeholder {font-size: 12px;}
+
+.subscribe input[type=email]:-ms-input-placeholder {font-size: 12px;}
+
+.subscribe input[type=email]::-ms-input-placeholder {font-size: 12px;}
+
 .subscribe input[type=email]::placeholder {font-size: 12px;}
 
 textarea {
@@ -596,6 +632,26 @@ textarea {
   padding: 10px 2%;
   border: 1px solid #fff;
   background-color: #101010;
+}
+
+input::-webkit-input-placeholder {
+  padding-left: 5px;
+  font-size: 11px;
+}
+
+input::-moz-placeholder {
+  padding-left: 5px;
+  font-size: 11px;
+}
+
+input:-ms-input-placeholder {
+  padding-left: 5px;
+  font-size: 11px;
+}
+
+input::-ms-input-placeholder {
+  padding-left: 5px;
+  font-size: 11px;
 }
 
 input::placeholder {
@@ -665,7 +721,7 @@ footer { padding: 85px 0;}
   padding:0 10%;
 }
 
-.links {text-align: left;}
+.links { text-align: left;}
 
 .link {
   margin-bottom: 12px;
@@ -680,8 +736,13 @@ footer { padding: 85px 0;}
 .gymer-info::first-letter {text-transform: capitalize;}
 
 .footer-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .subscribe {
@@ -714,7 +775,7 @@ footer { padding: 85px 0;}
   background-color: #656565;
 }
 
-.link {display: block;}
+.link { display: block;}
 
 .subscribe {
   width: 60%;
@@ -755,8 +816,10 @@ footer { padding: 85px 0;}
 }
 
 .info-img img {
-  object-fit: fill;
-  object-position: center;
+  -o-object-fit: fill;
+     object-fit: fill;
+  -o-object-position: center;
+     object-position: center;
 }
 .gallery-item { width: 24.5%;}
 
@@ -863,12 +926,19 @@ footer { padding: 85px 0;}
     font-size: 60px;
   }
 
-  .logo {padding-right: 0;}
+  .logo { padding-right: 0;}
 
   .visitor {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .day {
@@ -895,7 +965,9 @@ footer { padding: 85px 0;}
     width: 100%;
     padding: 20px 0;
     margin: 50px 0;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
   .name { width: 100%;}
@@ -915,7 +987,7 @@ footer { padding: 85px 0;}
 
   .description { font-size: 16px;}
 
-  .gym-information { flex-direction: column;}
+  .gym-information { -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column;}
 
   .information { width: 95%;}
 
@@ -941,8 +1013,13 @@ footer { padding: 85px 0;}
   .get-in-title { padding-top: 10px;}
 
   .footer-form { 
-    flex-direction: column;
-    align-items: center;
+    -webkit-box-orient: vertical; 
+    -webkit-box-direction: normal; 
+        -ms-flex-direction: column; 
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 
   .get-in { 
