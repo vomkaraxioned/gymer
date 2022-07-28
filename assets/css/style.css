@@ -909,13 +909,14 @@ footer { padding: 85px 0;}
   .classes { width: 100%;}
 
   .banner-title {  
-    margin:0 25%;
+    margin:0 5%;
     text-align: center;
   }
 
   .description { font-size: 16px;}
 
   .gym-information { flex-direction: column;}
+
   .information { width: 95%;}
 
   .info-img {
@@ -968,7 +969,7 @@ footer { padding: 85px 0;}
   .logo {padding-right: 20%;}
 
   .banner-title { 
-    padding: 100px 5%;
+    padding: 100px 20%;
     font-size: 40px;
   }
 
