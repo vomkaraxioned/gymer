@@ -190,9 +190,13 @@ nav {
 
 .active { border-bottom: 1px solid #fff;}
 
+
+
 .nav-item a { color: #fff;}
 
 .nav-item a:hover { border-bottom: 1px solid #fff;}
+
+.active:hover { border-bottom: none;}
 
 .menu { display: none;}
 
@@ -319,6 +323,7 @@ nav {
 
 .info-btn {
   padding: 15px 5%;
+  border:1px solid #41be85;
   background-color: #41be85;
   color: #000;
   font-size:8px;
@@ -328,7 +333,6 @@ nav {
 }
 
 .info-btn:hover {
-  border:1px solid #41be85;
   background-color: #000;
   color: #41be85;
 }
@@ -468,23 +472,23 @@ nav {
   text-align: center;
 }
 
-.joining a {color: #41be85;}
+.joining a { color: #41be85;}
 
-.joining a:hover {color: #fff;}
+.joining a:hover { color: #fff;}
 
 /* time table ends here */
 
 /* trainers info start here */
 
-.trainer-info {width: 47%;}
+.trainer-info { width: 47%;}
 
 /* trainers info ends here */
 
 /* trainer profile starts here */
 
-.trainer-profiles{padding:10px 0 145px 0;}
+.trainer-profiles{ padding:10px 0 145px 0;}
 
-.profile {width: 29.5%;}
+.profile { width: 29.5%;}
 
 .profile:nth-child(even) {
   padding: 0 5%;
@@ -517,7 +521,7 @@ nav {
 
 /*featured services start here*/
 
-.featured-services {width: 47%;}
+.featured-services { width: 47%;}
 
 .service {
   width: 23%;
@@ -595,15 +599,15 @@ input {
   background-color: #101010;
 }
 
-input::-webkit-input-placeholder {font-size: 12px;}
+input::-webkit-input-placeholder { font-size: 12px;}
 
-input::-moz-placeholder {font-size: 12px;}
+input::-moz-placeholder { font-size: 12px;}
 
-input:-ms-input-placeholder {font-size: 12px;}
+input:-ms-input-placeholder { font-size: 12px;}
 
-input::-ms-input-placeholder {font-size: 12px;}
+input::-ms-input-placeholder { font-size: 12px;}
 
-input::placeholder {font-size: 12px;}
+input::placeholder { font-size: 12px;}
 
 .name {
   width: 46.8%;
@@ -611,21 +615,21 @@ input::placeholder {font-size: 12px;}
   display: inline-block;
 }
 
-.name:nth-child(1){padding-right: 5%;}
+.name:nth-child(1){ padding-right: 5%;}
 
 .error {display: none;}
 
 .subject,.email,.txt-area { margin-bottom: 12px;}
 
-.subscribe input[type=email]::-webkit-input-placeholder {font-size: 12px;}
+.subscribe input[type=email]::-webkit-input-placeholder { font-size: 12px;}
 
-.subscribe input[type=email]::-moz-placeholder {font-size: 12px;}
+.subscribe input[type=email]::-moz-placeholder { font-size: 12px;}
 
-.subscribe input[type=email]:-ms-input-placeholder {font-size: 12px;}
+.subscribe input[type=email]:-ms-input-placeholder { font-size: 12px;}
 
-.subscribe input[type=email]::-ms-input-placeholder {font-size: 12px;}
+.subscribe input[type=email]::-ms-input-placeholder { font-size: 12px;}
 
-.subscribe input[type=email]::placeholder {font-size: 12px;}
+.subscribe input[type=email]::placeholder { font-size: 12px;}
 
 textarea {
   width: 96%;
@@ -658,10 +662,11 @@ input::placeholder {
   padding-left: 5px;
   font-size: 11px;
 }
+
 .form-btn {
   width: 47%;
   padding: 15px 0;
-  border: none;
+  border: 1px solid #41be85;
   background-color: #41be85;
   font-size: 9px ;
   font-weight: 900;
@@ -675,7 +680,6 @@ input::placeholder {
 }
 
 .form-btn:hover {
-  border: 1px solid #41be85;
   background-color: #000;
   color: #41be85;
 }
@@ -731,9 +735,9 @@ footer { padding: 85px 0;}
 
 .link a { color: #41be85;}
 
-.link a:hover {color: #fff;}
+.link a:hover { color: #fff;}
 
-.gymer-info::first-letter {text-transform: capitalize;}
+.gymer-info::first-letter { text-transform: capitalize;}
 
 .footer-form {
   display: -webkit-box;
@@ -759,8 +763,8 @@ footer { padding: 85px 0;}
 
 .subs-email {
   width: 100%;
-  padding: 12px 0;
-  border: none;
+  padding: 11px 0;
+  border:1px solid #41be85;
   background-color: #41be85;
 }
 
@@ -771,7 +775,6 @@ footer { padding: 85px 0;}
 }
 
 .subs-email:hover { 
-  border:1px solid #41be85;
   background-color: #656565;
 }
 
@@ -1060,5 +1063,7 @@ footer { padding: 85px 0;}
 }
 
 .time-table { width: 100%;}
+
+
   
   }  
